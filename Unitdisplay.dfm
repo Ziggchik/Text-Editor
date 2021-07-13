@@ -1,0 +1,73 @@
+object Formdisplay: TFormdisplay
+  Left = 757
+  Top = 220
+  Width = 389
+  Height = 403
+  Caption = #1044#1080#1089#1087#1083#1077#1081
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  OnResize = FormResize
+  PixelsPerInch = 96
+  TextHeight = 13
+  object bvl1: TBevel
+    Left = 0
+    Top = 0
+    Width = 373
+    Height = 50
+    Align = alTop
+    Shape = bsFrame
+  end
+  object drwgrd1: TDrawGrid
+    Left = 0
+    Top = 50
+    Width = 373
+    Height = 314
+    Align = alClient
+    ColCount = 20
+    DefaultColWidth = 18
+    FixedCols = 0
+    RowCount = 13
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine]
+    ScrollBars = ssNone
+    TabOrder = 0
+    OnDrawCell = drwgrd1DrawCell
+    OnKeyDown = drwgrd1KeyDown
+    OnSelectCell = drwgrd1SelectCell
+  end
+  object cbb1: TComboBox
+    Left = 0
+    Top = 0
+    Width = 145
+    Height = 21
+    Style = csDropDownList
+    ItemHeight = 13
+    Sorted = True
+    TabOrder = 1
+    OnClick = cbb1Click
+  end
+  object pnl1: TPanel
+    Left = 128
+    Top = 144
+    Width = 97
+    Height = 49
+    BevelInner = bvRaised
+    BevelWidth = 4
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+    Visible = False
+    OnClick = pnl1Click
+  end
+end

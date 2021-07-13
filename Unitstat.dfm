@@ -1,0 +1,85 @@
+object Formstat: TFormstat
+  Left = 201
+  Top = 145
+  Width = 958
+  Height = 511
+  Caption = #1057#1090#1072#1090#1080#1089#1090#1080#1082#1072
+  Color = clBtnFace
+  Constraints.MaxHeight = 600
+  Constraints.MaxWidth = 7500
+  Constraints.MinHeight = 300
+  Constraints.MinWidth = 300
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object cht1: TChart
+    Left = 0
+    Top = 0
+    Width = 942
+    Height = 472
+    AllowPanning = pmNone
+    AllowZoom = False
+    BackWall.Brush.Color = clWhite
+    BackWall.Brush.Style = bsClear
+    BackWall.Pen.Visible = False
+    Gradient.EndColor = clAqua
+    Gradient.StartColor = 4259584
+    Gradient.Visible = True
+    Title.Text.Strings = (
+      #1057#1090#1072#1090#1080#1089#1090#1080#1082#1072' '#1087#1086' '#1090#1077#1082#1089#1090#1091
+      '')
+    AxisVisible = False
+    Chart3DPercent = 20
+    ClipPoints = False
+    Frame.Visible = False
+    Legend.ShadowSize = 0
+    View3DOptions.Elevation = 315
+    View3DOptions.Orthogonal = False
+    View3DOptions.Perspective = 0
+    View3DOptions.Rotation = 360
+    View3DWalls = False
+    Align = alClient
+    BevelOuter = bvNone
+    BevelWidth = 0
+    TabOrder = 0
+    object btn1: TButton
+      Left = 104
+      Top = 40
+      Width = 129
+      Height = 41
+      Caption = #1042#1099#1082#1083
+      TabOrder = 0
+      OnClick = btn1Click
+    end
+    object btn2: TButton
+      Left = 240
+      Top = 40
+      Width = 137
+      Height = 41
+      Caption = #1042#1082#1083
+      TabOrder = 1
+      OnClick = btn2Click
+    end
+    object psrsSeries1: TPieSeries
+      Marks.ArrowLength = 8
+      Marks.Visible = True
+      SeriesColor = clRed
+      OtherSlice.Text = 'Other'
+      PieValues.DateTime = False
+      PieValues.Name = 'Pie'
+      PieValues.Multiplier = 1.000000000000000000
+      PieValues.Order = loNone
+    end
+  end
+  object Timer1: TTimer
+    Interval = 10
+    OnTimer = Timer1Timer
+    Left = 56
+    Top = 40
+  end
+end
